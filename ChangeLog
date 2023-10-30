@@ -1,3 +1,11 @@
+10/30/2023 15:40 Sage I. Hendricks <sage.codes@email.com>
+
+	Added example program sources: a CP/M's ED.COM editor and a Hello 
+	World program.
+
+	* example/hello.plm: Hello World source (for CP/M 80)
+	* example/ed.plm: CP/M v2.0 Context Editor source code
+
 10/30/2023 15:35 Sage I. Hendricks <sage.codes@email.com>
 
 	Changed Regex for finding numbers to be more precise, and added
