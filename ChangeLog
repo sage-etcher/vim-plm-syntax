@@ -1,3 +1,9 @@
+10/30/2023 15:54 Sage I. Hendricks <sage.codes@email.com>
+
+	PL/M string highlight fixed. match name changed
+
+	* syntax/plm.vim: Match name updated, fixed typo in name.
+
 10/30/2023 15:40 Sage I. Hendricks <sage.codes@email.com>
 
 	Added example program sources: a CP/M's ED.COM editor and a Hello 

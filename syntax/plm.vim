@@ -48,7 +48,7 @@ syn match syntaxNestedLabelMatch '^\s*[A-Za-z0-9$_-]\+:' contains=syntaxLabelMat
 syn match syntaxLabelMatch '[A-Za-z0-9$_-]\+:' contained
 
 " String Matches
-syn match syntaxStringMatch1 '\'\(\\\'\|[^\']\)*\''
+syn match syntaxStringMatch '\'\(\\\'\|[^\']\)*\''
 
 " Comment Matches
 syn match syntaxCommentMatch '\/\*\_.\{-}\*\/'
