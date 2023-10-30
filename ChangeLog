@@ -1,0 +1,8 @@
+10/30/2023 08:38 Sage I. Hendricks <sage.codes@email.com>
+
+	Created GitHub repo and added basic README cover page.
+
+	* README.md: Added quick and simple readme, w/ description, install
+	instructions, examples (kinda), and license
+	* INSTALL: Added install instructions
+	* .gitignore: added ignores for temporary files (swp and bak)

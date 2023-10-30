@@ -1,0 +1,14 @@
+
+Installing the plugin as a Vim 8 Package
+
+$ as user
+# as root
+
+$ mkdir -pv ~/.vim/pack/*/start/
+$ cd ~/.vim/pack/*/start
+$ git clone git@github.com:sage-etcher/vim-plm-syntax.git
+
+  or
+
+$ git clone https://github.com/sage-etcher/vim-plm-syntax.git
+
