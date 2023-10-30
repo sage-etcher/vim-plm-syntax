@@ -1,3 +1,10 @@
+10/30/2023 09:53 Sage I. Hendricks <sage.codes@email.com>
+	
+	Prefixed source code files with licensing information.
+
+	* syntax/plm.vim: add licensing agreement as first part of the file
+	* ftdetect/plm.vim: add licensing agreement as first part of the file
+
 10/30/2023 09:46 Sage I. Hendricks <sage.codes@email.com>
 
 	Updated formatting issue in main README file.
