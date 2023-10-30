@@ -32,14 +32,27 @@ $ git clone https://github.com/sage-etcher/vim-plm-syntax.git
 
 ## Examples
 
-Vim (and the vast majority of modern code edittors) lacks propper syntax highlighting for the language, due to it's age. So, rather than being condemned to having to edit files in plain text, you can get basic syntax highlighting here!
+Vim (and the vast majority of modern code edittors) lack proper syntax highlighting for the language, mainly due to it's age. So, rather than being condemned to choose between editting files in plain text or a spotty "catch all" syntax highlighting script, you can get custom syntax highlighting, that was designed for the language, here!!
+
+<details>
+  <summary>Standard Vim Plain Text</summary>
+
+  <br>
+
+  Everyone knows what plain text looks like, but for comparison, this is the same code throughout. First, in plain text view.
+
+  ![Plain Text Example](./images/syntax-off.png "Plain text, syntax off")
+
+</details>
 
 <details>
   <summary>Standard Vim (no plugin)</summary>
 
   <br>
 
-  Lorem Ipsum
+  The default vim "generic" syntax hightlighting does an alright job with PL/M due to it's generic looking syntax. But, if you look closely you may start to see some issues, the most glaring is the it often grabs HEX characters where they should be variables, or functions, or even comments. And it lacks support for many of the built in procedures.
+
+  ![Example of Standard Syntax Highlighting](./images/syntax-stock.png "Standard Syntax Highlighting")
 
 </details>
 
@@ -48,7 +61,9 @@ Vim (and the vast majority of modern code edittors) lacks propper syntax highlig
 
   <br> 
 
-  Lorem Ipsum
+  Here you can see the language being highlighted in a clear manner, variables aren't getting confused for hex, comments are always hightlighted as comments, and overall, it works like a gem.
+
+  ![Example of Plugin Syntax Highlighting](./images/syntax-plugin.png "Syntax Highlighting using the Plugin")
 
 </details>
 

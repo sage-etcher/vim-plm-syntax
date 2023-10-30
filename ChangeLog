@@ -1,3 +1,11 @@
+10/30/2023 16:14 Sage I. Hendricks <sage.codes@email.com>
+
+	Added Example Images to README file.
+
+	* images/*: example images
+	* README.md: added example images and quick descriptions to the
+	images.
+
 10/30/2023 15:54 Sage I. Hendricks <sage.codes@email.com>
 
 	PL/M string highlight fixed. match name changed
