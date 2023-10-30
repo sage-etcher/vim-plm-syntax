@@ -15,17 +15,17 @@ PL/M is often creditted as being the first High-Level Language written specifica
 
   Installing the plugin as a Vim 8 Package
 
-  $ as user
-  \# as root
+  $ as user  
+  \# as root  
 
 ```
-$ mkdir -pv ~/.vim/pack/*/start/
-$ cd ~/.vim/pack/*/start
-$ git clone git@github.com:sage-etcher/vim-plm-syntax.git
+$ mkdir -pv ~/.vim/pack/*/start/  
+$ cd ~/.vim/pack/*/start  
+$ git clone git@github.com:sage-etcher/vim-plm-syntax.git  
 
-  or
+  or  
 
-$ git clone https://github.com/sage-etcher/vim-plm-syntax.git
+$ git clone https://github.com/sage-etcher/vim-plm-syntax.git  
 ```
 
 </details>
