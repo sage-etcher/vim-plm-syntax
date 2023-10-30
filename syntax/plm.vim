@@ -25,26 +25,47 @@ if exists ("b:current_syntax")
 endif
 
 " Keywords
-syn keyword syntaxReservedWords IF THEN ELSE DO PROCEDURE END DECLARE BYTE ADDRESS LABEL INTITIAL DATA LITERALLY BASED GO TO BY GOTO CASE WHILE CALL RETURN HALT OR AND XOR NOT MOD PLUS MINUS EOF
+syn keyword syntaxReservedWords IF THEN ELSE DO PROCEDURE END DECLARE BYTE ADDRESS LABEL INTITIAL DATA LITERALLY BASED GO TO BY GOTO CASE WHILE CALL RETURN HALT OR AND XOR NOT MOD PLUS MINUS EOF MEMORY TIME SHR SHL ROR ROL AT
 
-" Matches
+" Matches Reserved Matches
 syn match syntaxReservedSymbols '\(\$\|=\|:=\|\.\|\/\|(\|)\|\%x2b\|-\|\'\|\*\|<\|>\|<=\|>=\|<>\|:\|;\)'
 
-syn match syntaxNumberMatch '\(0x\)\=\d\+\(H\|h\|O\|o\|Q\|q\|D\|d\)\='
+" Number Matches
+syn match syntaxDecNum1 '\<\d\+[Dd]\=\>' contains=syntaxDecNumMatch
+syn match syntaxDecNumMatch '\d\+[Dd]\=' contained
+
+syn match syntaxHexNum1 '\<\(0\=\x\+[Hh]\|0x\x\+\)\>' contains=syntaxHexNumMatch
+syn match syntaxHexNumMatch '\(0\=\x\+[Hh]\|0x\x\+\)' contained
+
+syn match syntaxOctNum1 '\<\o\+[OoQq]\>' contains=syntaxOctNumMatch
+syn match syntaxOctNumMatch '\o\+[OoQq]' contained
+
+syn match syntaxBinNum1 '\<[01$]\+[Bb]\>' contains=syntaxBinNumMatch
+syn match syntaxBinNumMatch '[01$]\+[Bb]' contained
+
+" Label Matches
+syn match syntaxNestedLabelMatch '^\s*[A-Za-z0-9$_-]\+:' contains=syntaxLabelMatch
+syn match syntaxLabelMatch '[A-Za-z0-9$_-]\+:' contained
+
+" String Matches
 syn match syntaxStringMatch1 '\'\(\\\'\|[^\']\)*\''
-" syn match syntaxStringMatch2 '\"\(\\\"\|[^\"]\)*\"'
+
+" Comment Matches
 syn match syntaxCommentMatch '\/\*\_.\{-}\*\/'
 
-" Regions
-" syn region syntaxElementRegion start='x' end='y'
-
-
+" Syntax Styles
 let b:current_syntax = "plm"
 hi def link syntaxReservedWords                  Identifier
 hi def link syntaxReservedSymbols                Operator
 
 hi def link syntaxNumberMatch                    Number 
-hi def link syntaxStringMatch1                   String
-" hi def link syntaxStringMatch2                   syntaxStringMatch1
+hi def link syntaxBinNumMatch                    syntaxNumberMatch 
+hi def link syntaxOctNumMatch                    syntaxNumberMatch 
+hi def link syntaxDecNumMatch                    syntaxNumberMatch 
+hi def link syntaxHexNumMatch                    syntaxNumberMatch 
+
+hi def link syntaxLabelMatch                     Label
+
+hi def link syntaxStringMatch                    String
 
 hi def link syntaxCommentMatch                   Comment

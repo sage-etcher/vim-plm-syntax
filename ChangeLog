@@ -1,3 +1,12 @@
+10/30/2023 15:35 Sage I. Hendricks <sage.codes@email.com>
+
+	Changed Regex for finding numbers to be more precise, and added
+	highlighting to labels.
+
+	* syntax/plm.vim: Redid the regex for finding numbers (and added
+	binary number type). Then, added regex for finding labels. Also added
+	Keywords for MEMORY and TIME, which are built in procedures.
+
 10/30/2023 09:53 Sage I. Hendricks <sage.codes@email.com>
 	
 	Prefixed source code files with licensing information.
